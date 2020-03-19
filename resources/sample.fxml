@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.ba.tutorijal2.Controller">
+   <children>
+      <BorderPane>
+         <top>
+            <HBox maxHeight="100.0" maxWidth="300.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="38.0" text="Koji su brojevi djeljivi sa sumom svojih cifara?" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox maxHeight="100.0" maxWidth="100.0" prefHeight="98.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <right>
+            <VBox maxHeight="100.0" maxWidth="100.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="400.0" prefHeight="328.0" prefWidth="202.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="105.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="95.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="97.4" minHeight="10.0" prefHeight="46.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="136.79999999999998" minHeight="10.0" prefHeight="39.799992370605466" vgrow="ALWAYS" />
+                  <RowConstraints maxHeight="241.80000762939454" minHeight="10.0" prefHeight="241.80000762939454" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#izracunaj" text="Izracunaj!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+                  <TextField fx:id="textfield" />
+                  <Label text="Ti brojevi su:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Label fx:id="sumica" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="262.0" prefWidth="202.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <VBox maxHeight="300.0" maxWidth="100.0" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
